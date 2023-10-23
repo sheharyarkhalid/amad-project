@@ -3,6 +3,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 * {
   -web-kit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -35,6 +37,27 @@ p,
 ul {
   margin: 0px;
   padding: 0px;
+}
+.header_bar_0 {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: flex-end;
+  padding:0px 15px 20px 15px;
+}
+.header_bar_0 a {
+  color: #fff !important;
+  font-size: 18px;
+text-decoration: none;
+}
+.header_bar_0 a:hover{
+  color: #fff !important;
+}
+.header_bar_0 a i{
+margin-right: 8px;
+}
+.header_bar_0 a:first-child{
+ margin-right: 15px;
 }
 .main_box {
   display: grid;
@@ -257,7 +280,9 @@ font-size: 24px;
 
 
 @media (max-width: 768px) {
-
+  .header_bar_0 {
+   justify-content: space-between;
+  }
   .desk_header {
     padding-top: 40px;
   }
@@ -357,12 +382,11 @@ margin-bottom: 110px;
   }
   .home_custom_section_1_figure_box{
       width: 100%;
-      height: 100%;
   }
   .home_custom_section_1_figure_box figure {
       margin: 0px;
       width: 100%;
-      height: 100%;
+   
   }
   .home_custom_section_1_figure_box figure img{
       width: 100%;
@@ -381,7 +405,7 @@ margin-bottom: 110px;
       padding-bottom: 15px;
   }
   .home_custom_section_1_heading h3{
-      
+    font-family: 'Fjalla One', sans-serif;
   font-style: normal;
   font-weight: 600 !important;
   font-size: 45px;
@@ -418,7 +442,7 @@ margin: 0px;
   text-transform: capitalize;
   color: #859086;
   margin: 0px;
-  padding-bottom: 20px;
+  padding-top: 20px;
 }
   .home_custom_section_1_btn a{
      
@@ -478,6 +502,12 @@ margin: 0px;
 
   }
   @media(max-width:540px){
+    .home_custom_section_1_figure_box figure {
+      display: none;
+  }
+  .home_custom_section_2_figure_box figure {
+    display: none;
+}
   .home_custom_section_1_heading h3 {
       font-size: 36px;
       line-height: 46px;
@@ -567,7 +597,7 @@ margin: 0px;
             width: 100%;
           }
           .banner_two_slider_text > h2 {
-            
+            font-family: 'Fjalla One', sans-serif;  
               font-style: normal;
     font-weight: 600;
     font-size: 61px;
@@ -704,6 +734,7 @@ margin: 0px;
   text-transform: capitalize;
   color: #859086;
 margin: 0px;  
+font-family: 'Fjalla One', sans-serif;
 }
   .home_custom_section_2_des{
       display: flex;
@@ -956,7 +987,7 @@ margin: 0px;
 .footer-detail-box-four {
   border-radius: 4px;
   background-color: rgb(255,255,255,0.3);
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   padding: 20px;
