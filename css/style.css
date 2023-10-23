@@ -57,7 +57,7 @@ padding-bottom:50px ;
 .navigation_list_main{
   display: flex;
   flex-direction: column;
-  max-width:380px;
+  max-width:450px;
   align-items: flex-end;
   position: relative;
   top: -25px; 
@@ -68,7 +68,7 @@ padding-bottom:50px ;
 }
 .navigation_list h2{
   font-size: 20px;
-  color: #000 ;
+  color: #859086 ;
   text-decoration: none;
 margin: 0px;
 padding-bottom: 15px;
@@ -387,7 +387,7 @@ margin-bottom: 110px;
   font-size: 45px;
   line-height: 58px;
   text-transform: capitalize;
-  color: #150000;
+  color: #859086;
 margin: 0px;  
 }
   .home_custom_section_1_des{
@@ -416,7 +416,7 @@ margin: 0px;
   font-size: 45px;
   line-height: 58px;
   text-transform: capitalize;
-  color: #150000;
+  color: #859086;
   margin: 0px;
   padding-bottom: 20px;
 }
@@ -702,7 +702,7 @@ margin: 0px;
   font-size: 45px;
   line-height: 58px;
   text-transform: capitalize;
-  color: #150000;
+  color: #859086;
 margin: 0px;  
 }
   .home_custom_section_2_des{
@@ -879,7 +879,7 @@ margin: 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
+  color: #fff !important;
   }
   .footer-detail-box-content-list{
     display: flex;
