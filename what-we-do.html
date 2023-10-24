@@ -50,6 +50,70 @@
 </head>
 
 <body>
+  <style>
+
+
+
+    #header .card .card-header .btn-header-link:after {
+     content: "\f107";
+     font-family: 'Font Awesome 5 Free';
+     font-weight: 900;
+     float: right;
+     right: -36px;
+       position: absolute;
+   }
+   #header .card .card-header .btn-header-link.collapsed:after {
+     content: "\f106";
+   }
+   
+    #header .card .card-header .btn-header-link.collapsed {
+   
+     color: #fff;
+   }
+   
+   .card {
+       background: transparent;
+       border: unset;
+       box-shadow: unset !important;
+       margin-bottom: 30px;
+     }
+   .card-header {
+       background: transparent;
+       box-shadow: unset !important;
+       border: unset;
+   padding: 0px;
+   
+   }
+   .card-header a.btn.btn-header-link {
+       padding: 0px;
+       display: flex;
+   }
+   .card-header a.btn.btn-header-link:focus-visible{
+     outline: unset !important;
+   }
+   .card-header a.btn.btn-header-link:focus{
+     outline: unset !important;
+     box-shadow: unset !important;
+   }
+   .card-body.toggle_body {
+       padding: 20px 0px !important;
+   }
+   .card-body.toggle_body ul li {
+       list-style: none;
+   }
+   .card-body.toggle_body ul {
+       display: grid;
+       gap: 20px;
+       margin: 0px;
+       border-left: 1px solid #fff;
+       padding-left: 14px;
+   }
+   .card-body.toggle_body ul li a {
+       font-size: 16px !important;
+       font-weight: normal !important;
+       padding: 0px !important;
+   }
+   </style>
 <style>
   .bg_main{
     background-color: #f2f2f2;
@@ -59,54 +123,123 @@
   }
 </style>
   
-  <header class="desk_header">
-    <div class="header_bar_0">
-      <a href="Contact.html"><i class="fas fa-phone-alt"></i> Contact
-        </a>
-      <a><i class="fal fa-globe"></i>English</a>
-    </div>
-    <div class="header_bar_1">
-      <div class="custom_container">
-        <div class="header_bar_1_list">
-          <a class="header_logo" href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
-          <div class="res_toggle_button desktop">
-            <i class="fa-light fa-bars"></i>
-            <span>Menu</span>
-          </div>
-
-          <div class="header_links">
-
-            <div class="header_links_list">
-              <a href="who-we-are.html"> Who We Are</a>
-              <a href="what-we-do.html"> What We Do</a>
-              <a href="how-we-help.html">How We Help</a>
-            </div>
-            <div class="res_toggle_button mobile">
-              <i class="fa-light fa-bars"></i>
-              <span>Menu</span>
-            </div>
-          </div>
-
-
-
-
+<header class="desk_header">
+  <div class="header_bar_0">
+    <a href="Contact.html"><i class="fas fa-phone-alt"></i> Contact
+    </a>
+    <a><i class="fal fa-globe"></i>English</a>
+  </div>
+  <div class="header_bar_1">
+    <div class="custom_container">
+      <div class="header_bar_1_list">
+        <a class="header_logo" href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
+        <div class="res_toggle_button desktop">
+          <i class="fa-light fa-bars"></i>
+          <span>Menu</span>
         </div>
-        <div class="header_sidebar_links ">
-          <div class="cross_btn"> <a class="header_logo" href="index.html"><img src="images/WhatsApp_Image_2023-10-24_at_12.39.09_AM-removebg-preview.png" alt="logo"></a><i
-              class="res_toggle_button fa-sharp fa-light fa-xmark"></i></div>
-          <div class="header_sidebar_links_list">
+
+        <div class="header_links">
+
+          <div class="header_links_list">
             <a href="who-we-are.html"> Who We Are</a>
             <a href="what-we-do.html"> What We Do</a>
             <a href="how-we-help.html">How We Help</a>
-            <a>NEWS</a>
-            <a href="career.html">CAREER</a>
-            <a href="Contact.html">CONTACT</a>
           </div>
-
+          <div class="res_toggle_button mobile">
+            <i class="fa-light fa-bars"></i>
+            <span>Menu</span>
+          </div>
         </div>
+
+
+
+
+      </div>
+      <div class="header_sidebar_links ">
+        <div class="cross_btn"> <a class="header_logo" href="index.html"><img
+              src="images/WhatsApp_Image_2023-10-24_at_12.39.09_AM-removebg-preview.png" alt="logo"></a><i
+            class="res_toggle_button fa-sharp fa-light fa-xmark"></i></div>
+        <div class="header_sidebar_links_list">
+
+              <div class="accordion" id="header">
+                <div class="card">
+                  <div class="card-header" id="headerhead1">
+                    <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#header1"
+                      aria-expanded="true" aria-controls="header1">Who We Are</a>
+                  </div>
+
+                  <div id="header1" class="collapse " aria-labelledby="headerhead1" data-parent="#header">
+                    <div class="card-body toggle_body">
+                      <ul>
+                        <li><a href="who-we-are.html">Who we are</a></li>
+                        <li><a>Locations </a></li>
+                        <li><a href="who-we-are.html#our-people-our-culture">Our People, Our Culture</a></li>
+                        <li><a href="who-we-are.html#history">History</a></li>
+                        <li><a href="who-we-are.html#vision">Vision</a></li>
+                        <li><a href="who-we-are.html#values">Values</a></li>
+                        <li><a href="who-we-are.html#health-and-safety">Health and Safety</a></li>
+                        <li><a href="who-we-are.html#diversity">Diversity</a></li>
+                </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="card-header" id="headerhead2">
+                    <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#header2"
+                      aria-expanded="true" aria-controls="header2">What We Do</a>
+                  </div>
+
+                  <div id="header2" class="collapse " aria-labelledby="headerhead2" data-parent="#header">
+                    <div class="card-body toggle_body">
+                      <ul>
+                        <li><a href="what-we-do.html">What We Do</a></li>
+                        <li><a href="what-we-do.html#bio-diesel">Bio Diesel </a></li>
+                        <li><a href="what-we-do.html#bio-fuel-oil">Bio Fuel Oil</a></li>
+                        <li><a href="what-we-do.html#high-blend-fuel">High Blend Fuel</a></li>
+                        <li><a href="what-we-do.html#other-bio-products">Other Bio-Products</a></li>
+                       
+                </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+
+                <div class="card-header" id="headerhead3">
+                  <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#header3"
+                    aria-expanded="true" aria-controls="header3">How We Help</a>
+                </div>
+
+                <div id="header3" class="collapse " aria-labelledby="headerhead3" data-parent="#header">
+                  <div class="card-body toggle_body">
+                    <ul>
+                      <li><a href="how-we-help.html">How We Help</a></li>
+                      <li><a href="how-we-help.html#the-bio-tech-energy-difference">The Bio Tech Energy Difference</a></li>
+                      <li><a href="how-we-help.html#why-is-biofuel-important?">Why is biofuel important?</a></li>
+                     
+              </ul>
+                  </div>
+                </div>
+                </div>
+
+              </div>
+           
+              <a>NEWS</a>
+          <a href="career.html">CAREER</a>
+          <a href="Contact.html">CONTACT</a>
+              </div>
+            
+
+        
+          
+        </div>
+
       </div>
     </div>
-  </header>
+  </div>
+</header>
   <section class="page_title_section">
 
     <div class="page_title_main">
@@ -129,14 +262,11 @@
       <div class="navigation_list sticky">
         <h2>Navigate to:</h2>
             <ul>
-              <li><a>Who we are</a></li>
-              <li><a>Locations  </a></li>
-              <li><a>Our People, Our Culture</a></li>
-              <li><a>History</a></li>
-              <li><a>Vision</a></li>
-              <li><a>Values</a></li>
-              <li><a>Health and Safety</a></li>
-              <li><a>Diversity</a></li>
+              <li><a href="what-we-do.html">What We Do</a></li>
+                          <li><a href="what-we-do.html#bio-diesel">Bio Diesel </a></li>
+                          <li><a href="what-we-do.html#bio-fuel-oil">Bio Fuel Oil</a></li>
+                          <li><a href="what-we-do.html#high-blend-fuel">High Blend Fuel</a></li>
+                          <li><a href="what-we-do.html#other-bio-products">Other Bio-Products</a></li>
             </ul>
             
         </div>
@@ -165,7 +295,7 @@
       </section>
 
       <div class="middle_figure"><img src="images/bg (2).JPG"></div>
-<div class="bg_main">
+<div class="bg_main" id="bio-diesel">
   <div class="home_custom_section_2_main">
     <div class="custom_container">
     <div class="home_custom_section_2">
@@ -195,7 +325,7 @@
     </div>
     </div>
 
-    <div class="home_custom_section_1_main">
+    <div class="home_custom_section_1_main" id="high-blend-fuel">
       <div class="custom_container">
       <div class="home_custom_section_1">
       <div class="home_custom_section_1_figure_box">
@@ -228,7 +358,7 @@
 
 
 
-      <div class="bg_main">
+      <div class="bg_main" id="bio-fuel-oil">
       <div class="home_custom_section_2_main">
         <div class="custom_container">
         <div class="home_custom_section_2">
@@ -257,7 +387,7 @@
         </div>
       </div>
     
-        <div class="home_custom_section_1_main">
+        <div class="home_custom_section_1_main" id="other-bio-products">
           <div class="custom_container">
           <div class="home_custom_section_1">
           <div class="home_custom_section_1_figure_box">
