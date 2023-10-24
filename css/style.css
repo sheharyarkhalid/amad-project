@@ -1486,11 +1486,11 @@ position: unset;
 
 
 .faq_page_section {
-display: inline-block;
-width: 100%;
-padding:0px 10px 40px 10px;
-    width: 100%;
-
+  display: inline-block;
+  width: 100%;
+  background: #f2f2f2;
+  padding: 30px 15px;
+  margin-bottom: 50px;
 }
 
 
@@ -1523,9 +1523,9 @@ margin: 0px;
 }
 .faq_tabs_data_section .accordion {
     padding: 0px 10px 0px 10px;
-    background: #fff;
     border-radius: 8px;
-}
+
+  }
 .accordion-header {
     margin-bottom: 10px;
     border: unset !important;
@@ -1539,7 +1539,7 @@ margin: 0px;
     font-size: 20px;
     font-weight: 700;
    
-background-color: #e5e5e5 !important;
+background-color: #fff !important;
     border-radius: 8px !important;
 }
 .faq_tabs_data_section .accordion .card-body p {
@@ -1554,17 +1554,38 @@ text-align: justify;
 .accordion-button:not(.collapsed) {
     background: transparent;
     color: #000;
-    box-shadow: unset;
+    box-shadow: unset !important;
 }
 .accordion-button:not(.collapsed) {
   color: #000 !important;
 }
+.accordion-button:not(.collapsed) img.plus{
+  display: none;
+}
+.accordion-button.collapsed img.minus{
+  display: block;
+}
+.accordion-button.collapsed img.minus{
+  display: none;
+}
+.accordion-button{
+  justify-content: space-between;
+}
+button.accordion-button img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 8px;
+}
   .accordion-button::after {
       background-image: url("./images/ok.webp") !important;
       transform: scale(.7) !important;
+   display: none !important; 
     }
     .accordion-button:not(.collapsed)::after {
       background-image: url("./images/ok2.webp") !important;
+      display: none !important; 
     }
 
 
